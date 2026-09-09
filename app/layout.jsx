@@ -1,4 +1,6 @@
 import "./globals.css";
+import SiteNav from "../components/SiteNav.jsx";
+import SiteFooter from "../components/SiteFooter.jsx";
 
 export const metadata = {
   title: "Acme SaaS",
@@ -10,12 +12,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <nav>
-            <a href="/">Home</a> | <a href="/pricing">Pricing</a> |{" "}
-            <a href="/dashboard">Dashboard</a> | <a href="/signup">Sign up</a>
-          </nav>
+          <SiteNav />
         </header>
         <main>{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );
