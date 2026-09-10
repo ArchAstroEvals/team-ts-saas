@@ -1,0 +1,7 @@
+# Project rules (Cursor + Claude)
+
+- App Router with server components by default; `"use client"` only for forms.
+- No `useEffect` for data fetching; derive values during render.
+- All pricing and billing math lives in `lib/` with vitest coverage.
+- Every PR needs a green CI run before merge.
+- E2E specs stay in `e2e/` and cover smoke paths only.
