@@ -1,4 +1,5 @@
 import { meterPercent, quotaLeft } from "../../lib/usage.js";
+import UsageBar from "../../components/UsageBar.jsx";
 
 const USED = 62;
 const QUOTA = 100;
@@ -10,8 +11,9 @@ export default function Dashboard() {
   return (
     <div>
       <h1>Dashboard</h1>
+      <UsageBar percent={pct} />
       <p>
-        Usage: {USED}/{QUOTA} ({pct}%) · {quotaLeft(USED, QUOTA)} left
+        {quotaLeft(USED, QUOTA)} seats left
       </p>
     </div>
   );
