@@ -4,4 +4,5 @@ test("pricing lists growth tier", async ({ page }) => {
   await page.goto("/pricing");
   await expect(page.getByRole("heading", { name: "Pricing" })).toBeVisible();
   await expect(page.getByText("Growth")).toBeVisible();
+  await expect(page.getByText("save 20%")).toBeVisible();
 });
