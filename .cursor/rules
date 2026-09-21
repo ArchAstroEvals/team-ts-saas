@@ -5,3 +5,4 @@
 - All pricing and billing math lives in `lib/` with vitest coverage.
 - Every PR needs a green CI run before merge.
 - E2E specs stay in `e2e/` and cover smoke paths only.
+- E2E runs Chromium only to keep CI fast.
